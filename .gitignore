@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .history/*
-*.lib
+*/chrome_extension/lib/*
 *.zip
 *.crx
 *.pem
