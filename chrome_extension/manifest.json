@@ -1,0 +1,22 @@
+{
+  "name": "Secret Double Octopus Portal",
+  "version": "1.1",
+  "description": "SDO Portal login",
+  "permissions": [
+    "tabs",
+    "storage",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.doubleoctopus.net/"
+  ],
+  "icons": {
+    "128": "favicon.png"
+  },
+  "browser_action": {
+    "default_icon": "favicon.png",
+    "default_title": "App Launcher",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
