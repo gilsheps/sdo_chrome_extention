@@ -1,4 +1,4 @@
-const portalUrl = "https://amitmt.doubleoctopus.io";
+const portalUrl = "https://lbsdo.doubleoctopus.net";
 const eventEmitter = new EventTarget();
 const sdo = {
   name: "SDO Portal",
@@ -6,7 +6,7 @@ const sdo = {
 };
 
 function launchApp(url) {
-  chrome.tabs.create({ url: url });
+  chrome.tabs.create({url: url});
   window.close(); // Only needed on OSX because of crbug.com/63594
 }
 
@@ -49,12 +49,12 @@ function addApp(appsDiv, app) {
 
 // Initialize the popup window
 document.addEventListener("DOMContentLoaded", async () => {
-  console.log('document.addEventListener')
+  console.log("document.addEventListener");
   const appsDiv = document.getElementById("apps");
   const services = await getServices();
   try {
     addApp(appsDiv, sdo);
-    console.log('services',services)
+    console.log("services", services);
     services.forEach((service) => addApp(appsDiv, service));
   } catch (err) {
     console.error("Error initializing apps:", err);
